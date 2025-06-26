@@ -54,8 +54,6 @@ let boutonZ = document.getElementById("z")
 
 
 
-
-
  function bouta() {
     for (i = 0; i<mot.length; i++)  {
     if ("a" === mot[i]) {
@@ -480,9 +478,6 @@ function testLives() {
 if (mot === para.textContent) {
   
     para.textContent = "GAGNEEEEEEE"
-
-    display2.join("") = "GAGNEEEEEEE"
-
 
 }
 else if (lives === 0)
