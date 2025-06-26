@@ -1,8 +1,8 @@
-const para = document.getElementById("para")
+let para = document.getElementById("para")
 para.style.fontSize = "100px"
 let arr = ["lion", "chat", "chien"]
 let rndNum = Math.floor(Math.random() * 3)
-const mot = "henrique"
+let mot = "henrique"
 
 let bouton = document.getElementById("bouton")
 let input = document.getElementById("input")
@@ -10,7 +10,7 @@ let input = document.getElementById("input")
 const paraLives = document.getElementById("lives")
 let lives = 7
 
-const motDebut = mot.split("").map((element)=> element = "_")
+let motDebut = mot.split("").map((element)=> element = "_")
 para.textContent = motDebut.join("")
 let display = para.textContent
 let display2 = display.split("")
@@ -52,8 +52,25 @@ let boutonX = document.getElementById("x")
 let boutonY = document.getElementById("y")
 let boutonZ = document.getElementById("z")
 
-
-
+function filtre(value, index) {
+if (value === mot[index]) {
+    display[index] = value
+}
+}
+function test3 () {
+for (i = 0; i<mot.length; i++)  {
+    if (input.value === mot[i]) {
+       display2[i] = input.value
+     
+        para.textContent = display2.join("")
+    }
+   
+    }
+    if (mot.includes(input.value) == false)
+    {
+        lives--
+    }
+}
  function bouta() {
     for (i = 0; i<mot.length; i++)  {
     if ("a" === mot[i]) {
@@ -472,17 +489,26 @@ function boutz() {
     }   
     testLives()
 }
+
 function testLives() {
     paraLives.textContent = `LIVES : ${lives}`
     image.src=`pendu${lives}.jpg`
+    
 if (mot === para.textContent) {
+    
   
     para.textContent = "GAGNEEEEEEE"
+
+    display2.join("") = "GAGNEEEEEEE"
+    
+    
+    
 
 }
 else if (lives === 0)
 {
     para.textContent = "LOOOOOOOOOOOOSEEEEEEEEEEEEEEEEEEEEER"
+  
 }
 }
 
