@@ -69,6 +69,7 @@ for (i = 0; i<mot.length; i++)  {
     if (mot.includes(input.value) == false)
     {
         lives--
+        
     }
 }
  function bouta() {
@@ -498,7 +499,7 @@ if (mot === para.textContent) {
   
     para.textContent = "GAGNEEEEEEE"
 
-    display2.join("") = "GAGNEEEEEEE"
+    
     
 
 }
