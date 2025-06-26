@@ -1,14 +1,18 @@
+let lives = 7
+
 let para = document.getElementById("para")
-para.style.fontSize = "100px"
+const image = document.getElementById("imagependu")
+
 let arr = ["lion", "chat", "chien"]
 let rndNum = Math.floor(Math.random() * 3)
 let mot = "henrique"
+
 
 let bouton = document.getElementById("bouton")
 let input = document.getElementById("input")
 
 const paraLives = document.getElementById("lives")
-let lives = 7
+
 
 let motDebut = mot.split("").map((element)=> element = "_")
 para.textContent = motDebut.join("")
@@ -17,9 +21,9 @@ let display2 = display.split("")
 
 let indiceimg = document.getElementById("indice")
 let indic = document.getElementById("indic")
-function imgp(event){
+function imgp(){
 
-        indiceimg.style.display = "block"
+    indiceimg.style.display = "block"
     
 }
 indic.addEventListener("click", imgp)
@@ -52,6 +56,7 @@ let boutonX = document.getElementById("x")
 let boutonY = document.getElementById("y")
 let boutonZ = document.getElementById("z")
 
+
 function filtre(value, index) {
 if (value === mot[index]) {
     display[index] = value
@@ -62,13 +67,14 @@ for (i = 0; i<mot.length; i++)  {
     if (input.value === mot[i]) {
        display2[i] = input.value
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
     if (mot.includes(input.value) == false)
     {
         lives--
+        
     }
 }
  function bouta() {
@@ -86,6 +92,7 @@ for (i = 0; i<mot.length; i++)  {
         testLives()
     }
    testLives() 
+   
 }
  function boutb() {
     for (i = 0; i<mot.length; i++)  {
@@ -108,7 +115,7 @@ for (i = 0; i<mot.length; i++)  {
     if ("c" === mot[i]) {
        display2[i] = "c"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -124,7 +131,7 @@ for (i = 0; i<mot.length; i++)  {
     if ("b" === mot[i]) {
        display2[i] = "d"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -140,7 +147,7 @@ for (i = 0; i<mot.length; i++)  {
     if ("e" === mot[i]) {
        display2[i] = "e"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -156,7 +163,7 @@ for (i = 0; i<mot.length; i++)  {
     if ("f" === mot[i]) {
        display2[i] = "f"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -172,7 +179,7 @@ for (i = 0; i<mot.length; i++)  {
     if ("g" === mot[i]) {
        display2[i] = "g"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -188,7 +195,7 @@ for (i = 0; i<mot.length; i++)  {
     if ("h" === mot[i]) {
        display2[i] = "h"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -204,7 +211,7 @@ function bouti() {
     if ("i" === mot[i]) {
        display2[i] = "i"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -220,7 +227,7 @@ function boutj() {
     if ("j" === mot[i]) {
        display2[i] = "j"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -236,7 +243,7 @@ function boutk() {
     if ("k" === mot[i]) {
        display2[i] = "k"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -252,7 +259,7 @@ function boutl() {
     if ("l" === mot[i]) {
        display2[i] = "l"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -268,7 +275,7 @@ function boutm() {
     if ("m" === mot[i]) {
        display2[i] = "m"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -284,7 +291,7 @@ function boutn() {
     if ("n" === mot[i]) {
        display2[i] = "n"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
 
     }
    
@@ -302,7 +309,7 @@ function bouto() {
     if ("o" === mot[i]) {
        display2[i] = "o"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -318,7 +325,7 @@ function boutp() {
     if ("p" === mot[i]) {
        display2[i] = "p"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -334,7 +341,7 @@ function boutq() {
     if ("q" === mot[i]) {
        display2[i] = "q"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -350,7 +357,7 @@ function boutr() {
     if ("r" === mot[i]) {
        display2[i] = "r"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -366,7 +373,7 @@ function bouts() {
     if ("s" === mot[i]) {
        display2[i] = "s"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -382,7 +389,7 @@ function boutt() {
     if ("t" === mot[i]) {
        display2[i] = "t"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -398,7 +405,7 @@ function boutu() {
     if ("u" === mot[i]) {
        display2[i] = "u"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -414,7 +421,7 @@ function boutv() {
     if ("v" === mot[i]) {
        display2[i] = "v"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -430,7 +437,7 @@ function boutw() {
     if ("w" === mot[i]) {
        display2[i] = "w"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -446,7 +453,7 @@ function boutx() {
     if ("x" === mot[i]) {
        display2[i] = "x"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -462,7 +469,7 @@ function bouty() {
     if ("y" === mot[i]) {
        display2[i] = "y"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -478,7 +485,7 @@ function boutz() {
     if ("z" === mot[i]) {
        display2[i] = "z"
      
-        para.textContent = display2.join("")
+        para.textContent = display2.join(" ")
     }
    
     }
@@ -492,14 +499,14 @@ function boutz() {
 
 function testLives() {
     paraLives.textContent = `LIVES : ${lives}`
-    image.src=`pendu${lives}.jpg`
+    image.src = `pendu${lives}.jpg`
     
-if (mot === para.textContent) {
+if (mot === display2.join("")) {
     
   
     para.textContent = "GAGNEEEEEEE"
 
-    display2.join("") = "GAGNEEEEEEE"
+    
     
     
     
@@ -507,7 +514,7 @@ if (mot === para.textContent) {
 }
 else if (lives === 0)
 {
-    para.textContent = "LOOOOOOOOOOOOSEEEEEEEEEEEEEEEEEEEEER"
+    para.textContent = "LOOOSEEEEEEER"
   
 }
 }
