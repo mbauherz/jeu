@@ -2,7 +2,7 @@ let para = document.getElementById("para")
 para.style.fontSize = "100px"
 let arr = ["lion", "chat", "chien"]
 let rndNum = Math.floor(Math.random() * 3)
-let mot = "piscine"
+let mot = "henrique"
 
 let bouton = document.getElementById("bouton")
 let input = document.getElementById("input")
