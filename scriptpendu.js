@@ -495,20 +495,16 @@ function testLives() {
     image.src=`pendu${lives}.jpg`
     
 if (mot === para.textContent) {
-    
   
     para.textContent = "GAGNEEEEEEE"
 
     display2.join("") = "GAGNEEEEEEE"
-    
-    
     
 
 }
 else if (lives === 0)
 {
     para.textContent = "LOOOOOOOOOOOOSEEEEEEEEEEEEEEEEEEEEER"
-  
 }
 }
 
